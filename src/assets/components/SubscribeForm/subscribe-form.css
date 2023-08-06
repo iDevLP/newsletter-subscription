@@ -1,0 +1,59 @@
+.sform {
+    width: 100%;
+    margin: 30px 0px;
+}
+
+.sform label {
+    display: inline-block;
+    margin: 10px 0px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.sform input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sform .success {
+    border: 1px solid gray;
+}
+.sform .failed{
+    border: 1px solid var(--primaryColor);
+    color: var(--primaryColor);
+    background-color: var(--primaryColorLight)
+}
+
+.sform span {
+    color: var(--primaryColor);
+    font-size: 12px;
+    display: inline-block;
+}
+
+.sform .email-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sform button {
+    padding: 15px;
+    display: block;
+    width: 100%;
+    background-color: var(--darkSlateGray);
+    color: var(--white);
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0px;
+}
+.sform button:valid:hover{
+    background-image: linear-gradient(to right,#FC2947 , var(--primaryColor));
+    color: white;
+}
+
+.sform button:disabled {
+    background-color: gray;
+    cursor:default;
+}

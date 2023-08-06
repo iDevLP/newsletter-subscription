@@ -1,0 +1,80 @@
+.sign-up {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.sign-up-container {
+    display: flex;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.su-text {
+    width: 380px;
+    padding: 20px 40px 0px 20px;
+    font-size: 14px;
+}
+
+.su-text h1 {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--darkSlateGray);
+    margin: 10px 0px;
+}
+
+.su-text p {
+    font-size: 14px;
+    margin: 10px 0px;
+}
+
+.su-text ul {
+    list-style: none;
+}
+
+.su-text li {
+    display: flex;
+    align-items: center;
+}
+
+.su-text li img {
+    margin: 5px 5px 5px 0px;
+}
+
+.su-img {
+    display: flex;
+    justify-content: end;
+}
+
+.sign-up img {
+    max-height: 450px;
+}
+
+@media (max-width:500px) {
+    .sign-up-container {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+        border-radius: 0px;
+    }
+    .su-img img{
+        display: none;
+    }
+    .su-img{
+        display: block;
+        background-image: url("./illustration-sign-up-mobile.svg");
+        width: 100%;
+        min-height: 300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        order: 1;
+        border-radius: 0px 0px 15px 15px;
+    }
+    .su-text{
+        order: 2;
+        padding: 20px;
+        width: 100%;
+    }
+}
